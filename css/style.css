@@ -1,0 +1,246 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0px;
+}
+
+img {
+    width: 100%;
+}
+
+.navbar{
+    text-transform:uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background-color: rgba(109, 105, 105, 0.5)!important;
+}
+.navbar-brand img{
+    height: auto;
+    width: auto;
+    margin: auto;
+}
+.navbar-nav li {
+    padding-right:.7rem;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color:white;
+    padding-top: .8rem;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: rgb(25, 42, 86);
+
+}
+.dropdown-menu .dropdown-item{
+    color:white;
+    padding-top: .8rem; 
+}
+
+.carousel-item {
+	
+    
+    background: no repeat scroll center scroll;
+    -webkit-backgroud-size: cover;
+    background-size: cover;
+    
+}
+.carousel-item::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right: 0;
+    background: #000;
+    opacity: .4;
+}
+.carousel-caption{
+    bottom: 180px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.carousel-caption h5{
+    font-size: 40px;
+    color: rgb(192, 57, 43,.8);
+    margin: 40px 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.carousel-caption p {
+    font-size: 25px;
+    color:rgb(229, 80, 57,.6) ;
+    margin: 20px 0px;
+    font-weight: 700;
+}
+.slider-btn{
+    background-color: rgba(109, 105, 105, 0.5);
+    color: aliceblue;
+    padding: 1.5rem 2 rem;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.carousel-btn{
+    background-color: rgba(109, 105, 105, 0.5);
+    color: aliceblue;
+    padding: 1.5rem 2 rem;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.variety{
+    padding-bottom: 40px;
+
+}
+.variety .card{
+    border: 0;
+    padding: 0 10px;
+    margin-bottom: 40px;
+    position: relative;
+    background: transparent;
+
+}
+.variety .card img{
+    
+    margin-left:-10px ;
+    overflow: hidden;
+    z-index: 9;
+    border-radius: 0;
+    box-shadow: 0px 7px 10px rgba(0,0,0,.5);
+}
+.variety  .card img{
+    max-width:100% ;
+    transition:all 0.3s ease-in-out ;
+
+}
+.variety .card-body{
+    z-index: 10;
+    background-color: rgb(214, 48, 49,.4);
+    border-top: 4px solid rgb(214, 48, 49 ,.6);
+    padding: 17px;
+    width: 264px;
+    height: 200px;
+    box-shadow: 0px 2px 15px (241,159,5,0.5);
+    margin-top: -60px;
+    transition: 0.3s;
+
+}
+
+.variety .card-title{
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.variety .card-title a{
+    color: #000;
+    transition: 0.3s;
+
+}
+.variety .read-more{
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    transition: 0.3s;
+    margin-top: 5px;
+}
+.variety .read-more a:hover{
+    color:#854101;
+    
+
+}
+.variety .card:hover img{
+    transform: scale(1.1);
+
+}
+.variety .card:hover .card-body{
+    border-color: #fdc134;
+}
+.variety .card:hover .card-body .card-title a{
+    color: #854101;
+}
+
+
+.product{
+    padding-bottom: 40px;
+
+}
+.product .card{
+    width: 280px;
+    height: 360px;
+    padding: 2rem 1rem;
+    background: #fff;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgba(0,0,0,.5);
+    transition: .5s all;
+    position: relative;
+}
+
+.product .card img{
+    
+    position: absolute;
+    top:0;
+    left:0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.product .card:hover{
+    transform:translateY(20px);
+
+}
+.product .card:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:  100%;
+    display: block;
+    background: linear-gradient( to bottom, rgb(214, 48, 49,.4),rgb(214, 48, 49,.3));
+    z-index:2;
+    transition: 0.5s;
+    opacity: 0;
+}
+.product .card:hover:before{
+    opacity: 1;
+}
+.product .card .card-body{
+    position: relative;
+    z-index: 3;
+    opacity: 0;
+    color: #fff;
+    transform: translateY(30px);
+    transition: 0.5s;
+}
+.product .card:hover .card-body{
+    opacity: 1;
+    transform:translateY(0px);
+}
+.product .card .card-body h5{
+    font-weight: 400;
+    margin: 0;
+    color: rgb(214, 48, 49,.8);
+
+}
+
+.product .card .card-body .btn{
+    text-decoration: none;
+    padding: .5rem 1rem;
+    color:orange;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: #fff;
+
+}
+
+.product .card .card-body .btn:hover{
+    box-shadow: 0px 7px 10px rgb(0,0,0,0.9);
+
+}
+
+

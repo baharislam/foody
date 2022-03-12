@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0px;
+}
+
+img {
+    width: 100%;
+}
+
+body{
+    background: url(images/cover2.jpg)
+    no-repeat center center fixed;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.navbar{
+    text-transform:uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background-color: rgba(109, 105, 105, 0.5)!important;
+}
+.navbar-brand img{
+    height: auto;
+    width: auto;
+    margin: auto;
+}
+.navbar-nav li {
+    padding-right:.7rem;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color:white;
+    padding-top: .8rem;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: rgb(25, 42, 86);
+
+}
+.dropdown-menu .dropdown-item{
+    color:white;
+    padding-top: .8rem; 
+}
