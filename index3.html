@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="css/all.min.css" type="image/x-icon">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+<style>
+    * {
+    padding: 0;
+    margin: 0;
+    outline: 0px;
+}
+
+img {
+    width: 100%;
+}
+body{
+    background-image: url(images/bg6.jpg);
+    background-size:cover;
+}
+
+.body::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right: 0;
+    background: #000;
+    opacity: .4;
+}
+hr{
+    background-color: white;
+}
+.contact-form{
+    background: rgba(0,0,0,.6);
+    color:white;
+    margin-top: 100px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 3px gray;
+}
+</style>
+<body>
+
+    <body data-spy="scroll" data-target="navbarResponsive">
+   
+        <nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark fixed-top">
+            <div class="container">
+            
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo.png"  style="height: auto; width: auto; padding-top: 3px ; padding-bottom: 3px;" class="d-inline-block align-top" alt="" loading="lazy">
+    
+                    </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+    
+                </button>
+          
+            <div class="collapse navbar-collapse " id="navbarResponsive">
+            
+              <ul class="navbar-nav mx-auto ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Reservation</a>
+                  </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Menu <span class="sr-only">(current)</span>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:  rgb(10, 61, 98, .6)!important;">
+                    <a class="dropdown-item" href="#">Daily Items</a>
+                    <a class="dropdown-item" href="#">Special Menu</a>
+                    <a class="dropdown-item" href="#">Evening Items</a>
+                    <a class="dropdown-item" href="#"></a>
+                   
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#" >Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#" >Contact</a>
+                  </li>
+              </ul>
+              <div class="col-auto">
+                <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-light my-sm-0" type="submit">Search</button>
+              </form>
+              </div>
+                </div>
+            </div>
+          </nav>
+          <br><br>
+          <br>
+
+          <section id="contact-section">
+              <div class="container contact-form">
+                  <h2>Contact US</h2>
+                  <p>Email us and keep update with our latest news</p>
+                  <hr>
+                  <div class="row">
+                      <div class="col-md-6">
+                          <address style="font-weight: bold; font-size: 20px;">W-343 Coseis Meits UT</address>
+                          
+                          <i class="fa fa-map-maker"></i><span class="form-info">192 PC Culture Housing</span><br>
+                          <i class="fa fa-phone"></i><span class="form-info">Phone no +0007643566</span><br>
+                          
+                          <i class="fad fa-envelope-square"></i><span class="form-info">nusratahmed12831@gmail</span>
+                          
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                              <label>Email</label>
+                              <input type="text" class="form-control">
+                          </div>
+                          <div class="form-group">
+                              <label>Message</label>
+                              <textarea class="form-control" rows="5"></textarea>
+                          </div>
+                          <div class="form-group">
+                              
+                              <button class="btn btn-primary btn-block" style="background-color:#ff7675;">Send Here</button>
+                          </div>
+                        </div>
+
+
+
+
+                    </div>
+                    
+              </div>
+
+          </section>
+
+
+
+
+    
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
+    
+</body>
+</html>
